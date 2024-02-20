@@ -246,72 +246,56 @@ Let me show respect before I end this program
 """
 
 
+# Define a function for repetitive typing with a given delay
+def type_text(text, delay):
+    for char in text:
+        pyautogui.typewrite(char)
+        time.sleep(delay)
 
-for char in text:
-    pyautogui.typewrite(char)
-    time.sleep(0.001)
+# Type text with small delay
+type_text(text, 0.001)
 
 time.sleep(1)  # Give some time to focus on the input field
 
+# Type 'poo'
 keyboard.write(poo)
 time.sleep(5)
+
+# Repeat a block of actions with increasing indentation for 'poo'
 for i in range(12):
-   poo =  indent(poo, '                 ')
-   pyperclip.copy(poo)
-   time.sleep(.1)
-   pyautogui.press("backspace")
-   pyautogui.hotkey('ctrl', 'v')
-   pyautogui.hotkey('ctrl', 'a')
-   time.sleep(.2)
+    poo = indent(poo, '                 ')
+    pyperclip.copy(poo)
+    time.sleep(.1)
+    pyautogui.press("backspace")
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.hotkey('ctrl', 'a')
+    time.sleep(.2)
 
+# Type 'three', 'two', 'one' with a delay
+for item in [three, two, one]:
+    pyperclip.copy(item)
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.hotkey('ctrl', 'a')
+    time.sleep(1)
 
-time.sleep(1)
-pyperclip.copy(three)
-pyautogui.hotkey('ctrl', 'v')
-pyautogui.hotkey('ctrl', 'a')
-time.sleep(1)
+# Type 'big_cake', 'congrats', 'hbd', 'cake' with a delay
+for item in [big_cake, congrats, hbd, cake]:
+    keyboard.write(item)
+    time.sleep(5)
 
-pyperclip.copy(two)
-pyautogui.hotkey('ctrl', 'v')
-pyautogui.hotkey('ctrl', 'a')
-time.sleep(1)
+# Type text2 with small delay
+type_text(text2, 0.001)
 
-pyperclip.copy(one)
-pyautogui.hotkey('ctrl', 'v')
-pyautogui.hotkey('ctrl', 'a')
-time.sleep(1)
-
-
-
-
-
-keyboard.write(big_cake)
-time.sleep(5)
-keyboard.write(congrats)
-time.sleep(5)
-
-keyboard.write(hbd)
-time.sleep(5)
-keyboard.write(cake)
-
-
-for char in text2:
-    pyautogui.typewrite(char)
-    time.sleep(0.001)
-
+# Type breath_in with a delay
 for char in breath_in:
     pyautogui.typewrite(char)
     time.sleep(0.5)
-   
+
+# Type breath_out
 pyautogui.typewrite(breath_out)
 
+# Type final with very small delay
+type_text(final, 0.0001)
 
-
-for char in final:
-    pyautogui.typewrite(char)
-    time.sleep(0.0001)
-   
 time.sleep(2)
 keyboard.write(respect)
-
-
