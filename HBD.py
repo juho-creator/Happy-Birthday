@@ -176,13 +176,7 @@ Heres your birthday cake!!
 Wait let me get the cake for ya
 """
 
-text2 = """
-I hope gracie isn't a super stressed girli this year
-Whenever you are stressed, please don't blow up and breath like this
-"""
 
-breath_in = "inhale..................wait for it...... wait for it..... just hold your breath a bit longer...."
-breath_out = "exhale"
 
 respect = """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⢠⠀⢠⠀⢀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -283,16 +277,8 @@ for item in [big_cake, congrats, hbd, cake]:
     keyboard.write(item)
     time.sleep(5)
 
-# Type text2 with small delay
-type_text(text2, 0.001)
 
-# Type breath_in with a delay
-for char in breath_in:
-    pyautogui.typewrite(char)
-    time.sleep(0.5)
 
-# Type breath_out
-pyautogui.typewrite(breath_out)
 
 # Type final with very small delay
 type_text(final, 0.0001)
