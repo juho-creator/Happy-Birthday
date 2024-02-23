@@ -4,9 +4,7 @@ Program for celebrating gracie's 28th birthday
 
 
 ## Demonstration Video 
-[![sddefault](https://github.com/juho-creator/HBD_GRACIE/assets/72856990/2444efc8-5a50-4856-975b-8f3b5e5078f5)](https://youtu.be/m2TRV_wncjw)
-
-
+[![Alt text of the image](https://i3.ytimg.com/vi/zlhpTWGYilQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=zlhpTWGYilQ)
 ## Reference
 - **ASCII Art Numbers** : [Learn More](https://gist.github.com/yuanqing/ffa2244bd134f911d365)
 - **Birthday ASCII Art** : [Learn More](https://emojicombos.com/birthday)
